@@ -3,6 +3,12 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "author": "kin <cuikangjie_90h@126.com>",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cuikangjie/toolkits.git"
+  },
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
