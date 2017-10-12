@@ -1,0 +1,14 @@
+{
+  "name": "kin-toolkits",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "pm2": "2.6.1",
+    "webpack": "^3.5.6"
+  },
+  "author": "",
+  "license": "MIT"
+}
