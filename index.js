@@ -6,6 +6,7 @@ const copyFile = require('./lib/copyFile')
 const format = require('./lib/formatTime')
 const mkdir = require('./lib/mkdir')
 const writeFile = require('./lib/writeFile')
+const nodeStart = require('./pm2/index')
 
 module.exports = {
   tools:{
@@ -15,6 +16,7 @@ module.exports = {
     cleanFile,
     copyFile,
     writeFile,
-    mkdir
+    mkdir,
+    nodeStart
   }
 }
