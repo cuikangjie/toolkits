@@ -34,9 +34,9 @@ function nodeStart(config){
 function list (name){
   return new Promise((resolve, reject) =>{
     pm2.list( (err, apps) => {
-      if(err){reject(null)}
+      if(err){resolve(null);return}
       let li = apps.filter((item) => {return item.name == name});
-      li.length > 0 ? resolve(li[0]) : reject(null);
+      li.length > 0 ? resolve(li[0]) : resolve(null);
     })
   })
 }
