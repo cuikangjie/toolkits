@@ -25,11 +25,14 @@ function nodeStart(config){
     app ? await restart(app.name).catch((err) => {}) : await start(option).catch((err) => {})
     app ? console.log(`      ${option.name} restart complete !`)  : console.log(`      ${option.name} start  complete !`)
     console.log(`=============     LOG  END        ===============`);
-    process.exit(2)
+    console.log('\n pm2 start complete ! \n');
+    process.exit()
   });
 }
 
-
+// process.on('exit', function(code) {
+//   console.log('\n pm2 start complete ! \n');
+// });
 
 function list (name){
   return new Promise((resolve, reject) =>{
