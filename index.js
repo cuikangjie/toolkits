@@ -7,11 +7,12 @@ const format = require('./lib/formatTime')
 const mkdir = require('./lib/mkdir')
 const writeFile = require('./lib/writeFile')
 const nodeStart = require('./pm2/index')
-
+const server = require('./lib/server')
 module.exports = {
   tools:{
     build,
     watch,
+    server,
     format,
     cleanFile,
     copyFile,
